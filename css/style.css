@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
 :root {
-  --heading-font-family: "Balsamiq Sans", cursive;
+  --heading-font-family: "Bree Serif", serif;
+  /* --heading-font-family: "Balsamiq Sans", cursive; */
 }
 *::-webkit-scrollbar {
   display: none;
