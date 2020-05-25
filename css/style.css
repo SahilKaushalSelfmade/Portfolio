@@ -1,10 +1,15 @@
 :root {
   --heading-font-family: "Balsamiq Sans", cursive;
 }
+*::-webkit-scrollbar {
+  display: none;
+}
 * {
   margin: 0;
   padding: 0;
   cursor: default;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: var(--heading-font-family);
 }
@@ -12,6 +17,7 @@
 a {
   text-decoration: none;
   cursor: pointer;
+  /* color: white; */
 }
 ul {
   list-style: none;
@@ -35,14 +41,128 @@ h6 {
   font-size: 1rem;
 }
 section {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 40px auto;
+  padding-bottom: 20px;
+  border-bottom: 2px solid white;
+}
+body {
+  background: #0d0c0d;
+  color: white;
 }
 /* GLOBAl */
+
+/* NAV */
+/* .nav {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+} */
+
+.smart-scroll {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+/* NAV */
+
+/* HOME */
+.carousel-inner img {
+  max-height: 660px;
+}
+/* HOME */
+
 /* SECTION PROFILE */
+.profile {
+  text-align: center;
+  word-wrap: break-word;
+  padding-bottom: 20px;
+  border-bottom: 2px solid white;
+}
 .profileimg {
   background: url("/images/my-images/20181007_133918.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  height: auto;
 }
 /* SECTION PROFILE */
+
+/* SECTION SERVICES */
+.services {
+  padding: 50px 10px;
+}
+.servicesheading {
+  text-align: center;
+  word-wrap: break-word;
+  margin-bottom: 50px;
+}
+.servicescolumn {
+  text-align: center;
+  word-wrap: break-word;
+  border: white 1px dotted;
+  padding: 10px !important;
+  line-height: 2;
+}
+.servicescolumn:hover {
+  padding: 20px !important;
+  background: lightblue;
+  color: black;
+  transition: 0.7s;
+}
+.faserviceicon {
+  color: lightseagreen;
+  padding: 30px 0;
+}
+/* SECTION SERVICES */
+
+/* SECTION RESUME */
+.resume {
+  text-align: center;
+}
+
+#resumebutton {
+  margin-bottom: 5px;
+  transition: 0.4s;
+}
+#resumebutton:hover {
+  padding: 15px 10px;
+  transition: ease-in-out 0.4s;
+  background: rgb(66, 153, 240);
+}
+/* SECTION RESUME */
+
+/*POPOVER  */
+.popover-header {
+  color: white;
+  background: rgb(66, 153, 240);
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 5px;
+}
+.popover-body {
+  background: rgb(66, 153, 240);
+  color: white;
+  border-radius: 25px;
+}
+.popover-body img {
+  border-radius: 25px;
+}
+.popover {
+  background: transparent;
+  border: none;
+  text-align: center;
+}
+.popover-fa-icon {
+  color: white;
+}
+/*POPOVER  */

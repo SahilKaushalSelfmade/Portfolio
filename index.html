@@ -43,16 +43,27 @@
 
     <!-- SEO -->
 
+    <!-- POPPER -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- POPPER -->
+
     <!-- CSS -->
 
     <!-- BS4 -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
     <!-- BS4 -->
 
     <link rel="stylesheet" href="css/style.css" />
@@ -60,44 +71,122 @@
     <!-- CSS -->
 
     <!-- FONAWESOME -->
-    <script src="https://kit.fontawesome.com/57a9f8b363.js" crossorigin="anonymous"></script>
- 
+    <script
+      src="https://kit.fontawesome.com/57a9f8b363.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- FONAWESOME -->
-
   </head>
+
   <body>
+    <!-- NAV BAR -->
+    <div class="navigation-bar">
+      <nav
+        class="nav navbar smart-scroll navbar-fixed-top navbar-expand-md navbar-dark bg-dark"
+      >
+        <a
+          ><img
+            src="images/my-images/20181007_133918.jpg"
+            class="navbar-brand"
+            rel="popover"
+            id="#navbarimagelogo"
+            style="height: 35px; width: 25px; border-radius: 100%;"
+        /></a>
+
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#Home"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Profile">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Skill">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- NAV BAR -->
+
     <!-- HOME -->
-    <div
-      id="Home"
-      class="carousel slide"
-      data-ride="carousel"
-    >
+    <div id="Home" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselHomeButton"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselHomeButton" data-slide-to="1"></li>
+        <li data-target="#carouselHomeButton" data-slide-to="2"></li>
+      </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
+            src="https://dummyimage.com/500x500"
             class="d-block w-100"
-            src="https://dummyimage.com/640x200/"
-            alt="First slide"
+            alt=""
           />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
         </div>
         <div class="carousel-item">
           <img
+            src="https://dummyimage.com/500x300"
             class="d-block w-100"
-            src="https://dummyimage.com/640x200/"
-            alt="Second slide"
+            alt=""
           />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
         </div>
         <div class="carousel-item">
           <img
+            src="https://dummyimage.com/500x400"
             class="d-block w-100"
-            src="https://dummyimage.com/640x200/"
-            alt="Third slide"
+            alt=""
           />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </div>
         </div>
       </div>
       <a
         class="carousel-control-prev"
-        href="#carouselExampleControls"
+        href="#carouselHomeButton"
         role="button"
         data-slide="prev"
       >
@@ -106,7 +195,7 @@
       </a>
       <a
         class="carousel-control-next"
-        href="#carouselExampleControls"
+        href="#carouselHomeButton"
         role="button"
         data-slide="next"
       >
@@ -115,129 +204,267 @@
       </a>
     </div>
     <!-- HOME -->
-    <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <img src="images/my-images/20181007_133918.jpg" class="navbar-brand" data-toggle="modal" id="#navbarimagelogo" data-target="#profile-modal" 
-        style="height: 35px; width: 25px; border-radius: 100%;"></img>
-      <button
-        class="navbar-toggler d-lg-none"
-        type="button"
-        data-toggle="collapse"
-        data-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#Home"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Profile">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Skill">Skill</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- NAV BAR -->
 
-    <!-- MODAL -->
-    <div
-      class="modal fade"
-      id="profile-modal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
+    <!-- PROFILE -->
+    <section class="profile" id="Profile">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 cold-md-6 col-lg-6 col-xl-6">
+            <h1>Hey! This is Sahil Kaushal</h1>
+            <h4>
+              You’re probably very busy, So here’s the short version of me: Hi!
+              I'm a Creative Web Designer And Developer.
+            </h4>
+            <p>
+              Experience in Management and a background with IT industry in
+              design, development and marketing. I have 7 years of experience
+              with the skills that needed to manage and develop a successful
+              business. In order to find inspiration for great ideas, being a
+              naturally curious person is important, and I am constantly
+              discovering new things about the world around me. I have been in
+              business development and management from last 3 years and I have
+              learned a lot of business techniques. I spend my days to generate
+              business, project management, strategic planning, resource
+              utilization, revenue growth, and cost management. Technically I
+              spend my days with my hands in many different areas of web
+              development from back end programming (PHP, WordPress, Shopify,
+              Python) to front end engineering (HTML, CSS, jQuery/JavaScript and
+              ajax), user experience and visual design (Photoshop and
+              CorelDraw).
+            </p>
           </div>
-          <div class="modal-body"></div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
+          <div class="col-sm-12 cold-md-6 col-lg-6 col-xl-6 profileimg"></div>
+        </div>
+      </div>
+    </section>
+    <!-- PROFILE -->
+
+    <!-- SERVICES -->
+    <section class="services" id="Services">
+      <div class="container">
+        <div class="servicesheading">
+          <h2>What I'm Doing?</h2>
+          <p class="mb-100">
+            I love what I do. I take great pride in what I do. And I can't do
+            something halfway,<br />
+            three-quarters, nine-tenths. If I'm going to do something, I go all
+            the way.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 servicescolumn">
+            <i class="fas fa-2x fa-chess-rook faserviceicon"></i>
+            <h4>WEB DESIGN</h4>
+            <p>
+              Looking for a web design service! We create a unique, innovative
+              and user friendly designs for your website and get you online in
+              as little as two week.
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 servicescolumn">
+            <i class="fas fa-2x fa-laptop-code faserviceicon"></i>
+            <h4>WEB DEVELOPMENT</h4>
+            <p>
+              Experienced in business websites, e-commerce portals, local
+              business websites, on variety of platforms like PHP and Python.
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 servicescolumn">
+            <i class="fa fa-2x fa-cloud faserviceicon"></i>
+            <h4>HOSTING AND CLOUD SETUP</h4>
+            <p>
+              Professionals in Hosting setup and cloud setup as well services
+              for website to make them online with reputed companies for domain
+              and hosting services.
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 servicescolumn">
+            <i class="fas fa-2x fa-lightbulb faserviceicon"></i>
+            <h4>SEO</h4>
+            <p>
+              Search Engine Optimization(SEO) is the key to success for every
+              business. Build your brand awareness and reputation across the web
+              with the help of Social Networks. Give us a call and get a quote!
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 servicescolumn">
+            <i class="fas fa-2x fa-home faserviceicon"></i>
+            <h4>LOGO DESIGN</h4>
+            <p>
+              Are you looking for creative Logo's? Feel free to contact us and
+              get free quote for your queries and get best best solution from
+              our experts.
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 servicescolumn">
+            <i class="fas fa-2x fa-user-astronaut faserviceicon"></i>
+            <h4>SUPPORT</h4>
+            <p>
+              We offers 24*7 support to all of our valuable customers so that
+              their websites ever up and running all the time. Feel free to
+              contact regarding your queries and enjoy the free consultation.
+            </p>
           </div>
         </div>
       </div>
-    </div>
-    <!-- MODAL -->
-    <!-- PROFILE -->
-<section class="profile" class="mt-50" id="Profile">
-  <div class="container">
-    <div class="row">
-      <div class="col col-sm-12 cold-md-6 col-lg-6 col-xl-6">
-        <h1>Hey! This is Sahil Kaushal</h1>
-        <h4>
-          You’re probably very busy, So here’s the short version of me: Hi! I'm a Creative Web Designer And Developer.
-        </h4>
-        <p> Experience in Management and a background with IT industry in design, development and marketing. I have 7 years of experience with the skills that needed to manage and develop a successful business. In order to find inspiration for great ideas, being a naturally curious person is important, and I am constantly discovering new things about the world around me.
-
-          I have been in business development and management from last 3 years and I have learned a lot of business techniques. I spend my days to generate business, project management, strategic planning, resource utilization, revenue growth, and cost management.
-          
-          Technically I spend my days with my hands in many different areas of web development from back end programming (PHP, WordPress, Shopify, Python) to front end engineering (HTML, CSS, jQuery/JavaScript and ajax), user experience and visual design (Photoshop and CorelDraw). </p>
-      </div>
-      <div class="col col-sm-12 cold-md-6 col-lg-6 col-xl-6 profileimg">
-      </div>
-
-    </div>
-  </div>
-
-</section>
-    <!-- PROFILE -->
-    
-    <!-- SERVICES -->
-<section class="services" id="Services">
-  <div class="container">
-    <div class="row ">
-    <div class=" col-sm-6 col-md-6 col-lg-4 col-xl-4"><i class="fas fa-chess-rook"></i><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, porro!</p></div>
-    <div class=" col-sm-6 col-md-6 col-lg-4 col-xl-4"><i class="fa fa-laptop-code"></i><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, porro!</p>      </div>
-    <div class=" col-sm-6 col-md-6 col-lg-4 col-xl-4"><i class="fas fa-cloud"></i><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, porro!</p></div>
-    <!-- <div class="row"> -->
-
-    <div class=" col-sm-6 col-md-6 col-lg-4 col-xl-4"><i class="fas fa-lightbulb"></i><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, porro!</p></div>
-    <div class=" col-sm-6 col-md-6 col-lg-4 col-xl-4"><i class="fas fa-home"></i><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, porro!</p></div>
-    <div class=" col-sm-6 col-md-6 col-lg-4 col-xl-4"><i class="fas fa-user-astronaut"></i><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, porro!</p></div>
-</div>
-</section>
-
+    </section>
     <!-- SERVICES -->
 
+    <!-- RESUME -->
+    <section class="resume" id="Resume">
+      <div class="container">
+        <div class="resumeheading">
+          <h2>My Resume</h2>
+          <p>
+            If you call failures experiments, you can put them in your resume
+            and claim them as achievements.
+          </p>
+        </div>
+        <p>
+          <a
+            class="btn btn-primary resume-btn"
+            data-toggle="collapse"
+            href="#resumeeducation"
+            role="button"
+            aria-expanded="false"
+            aria-controls="resumeeducation"
+            >Education</a
+          >
+          <!-- <button class="btn btn-primary resume-btn" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="resumeeducation resumeexperience">Toggle both elements</button> -->
+          <button
+            class="btn btn-primary resume-btn"
+            type="button"
+            data-toggle="collapse"
+            data-target="#resumeexperience"
+            aria-expanded="false"
+            aria-controls="resumeexperience"
+          >
+            Experience
+          </button>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="resumeeducation">
+              <div class="card card-body resumedesc">
+                <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quia. -->
+                <button
+                  type="button"
+                  id="resumebutton"
+                  class="btn resumebtndismiss"
+                  data-trigger="hover"
+                  data-container="body"
+                  data-toggle="popover"
+                  data-placement="top"
+                  title="2022"
+                  data-content="Indira Gandhi National Open University (IGNOU)"
+                  disabled
+                >
+                  Undergraduate(Bachelors in Computer Application)
+                </button>
+                <button
+                  type="button"
+                  id="resumebutton"
+                  class="btn resumebtndismiss"
+                  data-trigger="hover"
+                  data-container="body"
+                  data-toggle="popover"
+                  data-placement="top"
+                  title="2018"
+                  data-content="Government Senior Secandary School Ramgarh Sikri"
+                  disabled
+                >
+                  Senior Secondary
+                </button>
+                <button
+                  type="button"
+                  id="resumebutton"
+                  class="btn resumebtndismiss"
+                  data-trigger="hover"
+                  data-container="body"
+                  data-toggle="popover"
+                  data-placement="top"
+                  title="2016"
+                  data-content="Dream Public School Ramgarh Sikri"
+                  disabled
+                >
+                  Matric
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="resumeexperience">
+              <div class="card card-body resumedesc">
+                <!-- Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. Nihil anim keffiyeh
+                helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                ea proident. -->
+                <button
+                  type="button"
+                  id="resumebutton"
+                  class="btn resumebtndismiss"
+                  data-trigger="hover"
+                  data-container="body"
+                  data-toggle="popover"
+                  data-placement="top"
+                  title="1 Year Experience"
+                  data-content="Work as a Designer."
+                  disabled
+                >
+                  Sharda Enterprises
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- RESUME -->
+
+    <!-- POPOVER -->
+    <div class="popover-body" style="display: none;">
+      <div class="card" id="popcard">
+        <img
+          src="https://dummyimage.com/152x152"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Sahil Kaushal</h5>
+          <p class="card-text">Follow Me</p>
+        </div>
+        <!-- <ul class="list-group list-group-flush">
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul> -->
+        <div class="card-body">
+          <a href="" class="card-link"
+            ><i
+              class="popover-fa-icon fa fa-2x fa-facebook"
+              aria-hidden="true"
+            ></i
+          ></a>
+          <a href="" class="card-link"
+            ><i
+              class="popover-fa-icon fa fa-2x fa-instagram"
+              aria-hidden="true"
+            ></i
+          ></a>
+          <a href="" class="card-link"
+            ><i
+              class="popover-fa-icon fa fa-2x fa-twitter"
+              aria-hidden="true"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- POPOVER -->
 
     <!-- JAVASCRIPT -->
 
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 
     <!-- JAVASCRIPT -->
 
@@ -252,8 +479,11 @@
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
-
-    <script src="js/bootstrap.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- BS4 -->
   </body>
