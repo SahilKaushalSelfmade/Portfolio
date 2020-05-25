@@ -1,0 +1,48 @@
+:root {
+  --heading-font-family: "Balsamiq Sans", cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  box-sizing: border-box;
+  font-family: var(--heading-font-family);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.6rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+h4 {
+  font-size: 1.8rem;
+}
+h5 {
+  font-size: 1.4rem;
+}
+h6 {
+  font-size: 1rem;
+}
+section {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/* GLOBAl */
+/* SECTION PROFILE */
+.profileimg {
+  background: url("/images/my-images/20181007_133918.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* SECTION PROFILE */
