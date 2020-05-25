@@ -91,8 +91,8 @@ body {
 }
 .profileimg {
   background: url("/images/my-images/20181007_133918.jpg");
-  background: url("images/my-images/20181007_133918.jpg");
-  background: url("https://dummyimage.com/500x500");
+  background-image: url("images/my-images/20181007_133918.jpg");
+  /* background: url("https://dummyimage.com/500x500"); */
 
   background-repeat: no-repeat;
   background-position: center;
