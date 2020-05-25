@@ -16,9 +16,13 @@ if ($('.smart-scroll').length > 0) { // check if element exists
     });
 };
 
+
 $('.navbar-nav>li>a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
 });
+
+
+
 
 // NAVBAR
 
