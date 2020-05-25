@@ -41,7 +41,7 @@ section {
 /* GLOBAl */
 /* SECTION PROFILE */
 .profileimg {
-  background: url("images/my-images/20181007_133918.jpg");
+  background: url("/images/my-images/20181007_133918.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
