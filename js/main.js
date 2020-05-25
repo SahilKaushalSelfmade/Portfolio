@@ -14,7 +14,12 @@ if ($('.smart-scroll').length > 0) { // check if element exists
         }
         last_scroll_top = scroll_top;
     });
-}
+};
+
+$('.navbar-nav>li>a').on('click', function () {
+    $('.navbar-collapse').collapse('hide');
+});
+
 // NAVBAR
 
 
