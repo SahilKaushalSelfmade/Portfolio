@@ -104,7 +104,7 @@ body {
 }
 .profileimg {
   background: url("/images/my-images/main.jpg");
-  background: url("images/my-images/main.jpg!important");
+  background: url("images/my-images/main.jpg") !important;
   width: auto;
 
   background-repeat: no-repeat;
