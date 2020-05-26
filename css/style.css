@@ -19,7 +19,6 @@
 a {
   text-decoration: none;
   cursor: pointer;
-  /* color: white; */
 }
 ul {
   list-style: none;
@@ -45,6 +44,7 @@ h6 {
 section {
   margin: 40px auto;
   padding-bottom: 20px;
+  /* max-width: 1366px; */
   border-bottom: 2px solid white;
 }
 body {
@@ -54,6 +54,7 @@ body {
 /* GLOBAl */
 
 /* NAV */
+
 /* .nav {
   position: fixed;
   width: 100%;
@@ -65,7 +66,7 @@ body {
   -webkit-transition: padding 0.2s ease;
   -moz-transition: padding 0.2s ease;
   -o-transition: padding 0.2s ease;
-  transition: padding 0.2s ease!important;
+  transition: padding 0.2s ease !important;
 }
 
 .smart-scroll {
@@ -110,17 +111,14 @@ body {
 /* SECTION SERVICES */
 .services {
   padding: 50px 10px;
-}
-.servicesheading {
   text-align: center;
   word-wrap: break-word;
+}
+.servicesheading {
   margin-bottom: 50px;
 }
 .servicescolumn {
-  text-align: center;
-  word-wrap: break-word;
   border: white 1px dotted;
-  padding: 10px !important;
   line-height: 2;
 }
 .servicescolumn:hover {
@@ -152,6 +150,11 @@ body {
 /* SECTION RESUME */
 
 /*POPOVER  */
+.popover {
+  background: transparent;
+  border: none;
+  text-align: center;
+}
 .popover-header {
   color: white;
   background: rgb(66, 153, 240);
@@ -166,11 +169,6 @@ body {
 }
 .popover-body img {
   border-radius: 25px;
-}
-.popover {
-  background: transparent;
-  border: none;
-  text-align: center;
 }
 .popover-fa-icon {
   color: white;
