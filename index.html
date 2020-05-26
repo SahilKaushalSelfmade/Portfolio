@@ -93,7 +93,7 @@
     <nav
       class="nav navbar smart-scroll navbar-fixed-top navbar-expand-md navbar-dark bg-dark"
     >
-      <a scroll
+      <a id="navbarlogoimg"
         ><img
           src="images/my-images/20181007_133918.jpg"
           class="navbar-brand"
@@ -116,27 +116,27 @@
       <div class="collapse navbar-collapse text-center" id="collapsibleNavId">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link scroll" href="#Home"
+            <a class="nav-link" href="#Home"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link scroll" href="#Profile">Profile</a>
+            <a class="nav-link" href="#Profile">Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link scroll" href="#Services">Services</a>
+            <a class="nav-link" href="#Services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link scroll" href="#Resume">Resume</a>
+            <a class="nav-link" href="#Resume">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link scroll" href="#Skill">Skill</a>
+            <a class="nav-link" href="#Skill">Skill</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link scroll" href="#Portfolio">Portfolio</a>
+            <a class="nav-link" href="#Portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link scroll" href="#Contact">Contact</a>
+            <a class="nav-link" href="#Contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -144,72 +144,54 @@
     <!-- NAV BAR -->
 
     <!-- HOME -->
-    <div id="Home" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li
-          data-target="#carouselHomeButton"
-          data-slide-to="0"
-          class="active"
-        ></li>
-        <li data-target="#carouselHomeButton" data-slide-to="1"></li>
-        <li data-target="#carouselHomeButton" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="https://sahilkaushalselfmade.github.io/anuradhasharma">
+    <div class="home" id="Home" style="max-width: 1440px; margin: 0 auto;">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
             <img
-              src="images/carousel/NewsWesite.png"
               class="d-block w-100"
-              alt=""
-          /></a>
-          <div class="carousel-caption d-none d-md-block">
-            <h5>News Website</h5>
-            <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+              src="images/carousel/NewsWesite.png"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="images/carousel/NewsWesite.png"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="images/carousel/NewsWesite.png"
+              alt="Third slide"
+            />
           </div>
         </div>
-        <div class="carousel-item">
-          <img
-            src="https://dummyimage.com/500x300"
-            class="d-block w-100"
-            alt=""
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://dummyimage.com/500x400"
-            class="d-block w-100"
-            alt=""
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <!-- <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p> -->
-          </div>
-        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <a
-        class="carousel-control-prev"
-        href="#carouselHomeButton"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselHomeButton"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
     <!-- HOME -->
 
