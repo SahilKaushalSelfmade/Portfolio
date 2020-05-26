@@ -104,10 +104,11 @@ body {
 }
 .profileimg {
   background: url("/images/my-images/main.jpg");
+  background: url("images/my-images/main.jpg!important");
   width: auto;
 
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   height: auto;
 }
 
