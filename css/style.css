@@ -103,13 +103,8 @@ body {
   border-bottom: 2px solid white;
 }
 .profileimg {
-<<<<<<< HEAD
   background: url("/images/my-images/main.jpg");
   background: url("images/my-images/main.jpg!important");
-=======
-  /*background: url("/images/my-images/main.jpg");*/
-background: url("images/my-images/main.jpg");
->>>>>>> 3ace80755900d415bd7957debe24263453aad59b
   width: auto;
 
   background-repeat: no-repeat;
