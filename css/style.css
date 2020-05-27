@@ -25,6 +25,12 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Balsamiq Sans", cursive;
+}
 ul {
   list-style: none;
 }
