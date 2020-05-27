@@ -134,7 +134,6 @@ nav a:hover {
   /* text-align: center; */
   word-wrap: break-word;
   padding-bottom: 20px;
-  text-align: center;
   border-bottom: 2px solid white;
 }
 .profileimg {
@@ -143,6 +142,7 @@ nav a:hover {
   width: auto;
   background-repeat: no-repeat;
   background-position: top right;
+  background-size: cover;
   height: auto;
 }
 
@@ -305,7 +305,7 @@ nav a:hover {
 @media (max-width: 998px) {
   .profileimg {
     background-position: top right !important;
-    height: 60vh !important;
+    height: 100vh !important;
   }
   .profiletext {
     text-align: center !important;
