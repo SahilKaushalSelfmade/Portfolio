@@ -279,6 +279,9 @@ nav a:hover {
 /* PORTFOLIO */
 
 /* CONTACT */
+.contact {
+  word-wrap: break-word;
+}
 .contactusicon {
   margin: 10px 0;
 }
