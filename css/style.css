@@ -122,6 +122,7 @@ nav a:hover {
 
 .carousel-inner {
   background-attachment: fixed !important;
+  opacity: 0.3;
 }
 .carousel-inner img {
   max-height: 660px;
