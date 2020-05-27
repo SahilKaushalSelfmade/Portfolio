@@ -139,11 +139,10 @@ nav a:hover {
 .profileimg {
   background: url("/images/my-images/main.jpg");
   background: url("https://sahilkaushalselfmade.github.io/Portfolio/images/my-images/main.jpg");
-  width: auto;
+  width: 100vw;
   background-repeat: no-repeat;
-  background-position: top right;
-  background-size: cover;
-  height: auto;
+  background-position: top right !important;
+  height: 100vh !important;
 }
 
 .profiletext {
@@ -306,6 +305,7 @@ nav a:hover {
   .profileimg {
     background-position: top right !important;
     height: 100vh !important;
+    background-size: cover;
   }
   .profiletext {
     text-align: center !important;
