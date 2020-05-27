@@ -35,7 +35,11 @@ $(function () {
 });
 // MAIN POPOVER
 
-
+$('#resumebutton').popover().click(function () {
+    setTimeout(function () {
+        $('[data-toggle="popover"]').popover('hide');
+    }, 2000);
+});
 
 // DISMISS
 $('.resumebtndismiss').popover({

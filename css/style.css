@@ -63,6 +63,7 @@ body {
   z-index: 100;
   top: 0;
 } */
+
 .navbar-brand:hover {
   text-align: center !important;
   border: 2px rgb(66, 153, 240) solid;
@@ -219,34 +220,6 @@ nav ul li a:hover {
 }
 /* SECTION RESUME */
 
-/*POPOVER  */
-.popover {
-  background: transparent;
-  border: none;
-  text-align: center;
-}
-.popover-header {
-  color: white;
-  background: rgb(66, 153, 240);
-  border-radius: 25px;
-  border: none;
-  margin-bottom: 5px;
-}
-.popover-body {
-  background: rgb(66, 153, 240);
-  color: white;
-  border-radius: 25px;
-}
-.popover-body img {
-  border-radius: 25px;
-}
-.fapopovericon {
-  margin: 10px;
-
-  color: white !important;
-}
-/*POPOVER  */
-
 /* PORTFOLIO */
 .portfolio {
   padding: 10px 0 !important;
@@ -295,6 +268,34 @@ nav ul li a:hover {
   margin: 10px 0;
 }
 /* CONTACT */
+
+/* POPOVER  */
+.popover {
+  background: transparent;
+  border: none;
+  text-align: center;
+}
+.popover-header {
+  color: white;
+  background: rgb(66, 153, 240);
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 5px;
+}
+.popover-body {
+  background: rgb(66, 153, 240);
+  color: white;
+  border-radius: 25px;
+}
+.popover-body img {
+  border-radius: 25px;
+}
+.fapopovericon {
+  margin: 10px;
+
+  color: white !important;
+}
+/*POPOVER  */
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
