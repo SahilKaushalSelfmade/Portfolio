@@ -15,6 +15,9 @@
   box-sizing: border-box;
   font-family: var(--heading-font-family);
 }
+i {
+  cursor: pointer;
+}
 .faiconsglobal {
   color: lightseagreen;
 }
@@ -44,9 +47,6 @@ h6 {
   font-size: 1rem;
 }
 section {
-  margin: 40px auto;
-  padding-bottom: 20px;
-  /* max-width: 1366px; */
   border-bottom: 2px solid white;
 }
 body {
@@ -64,12 +64,26 @@ body {
   top: 0;
 } */
 
-.navbar {
-  -webkit-transition: padding 0.2s ease;
-  -moz-transition: padding 0.2s ease;
-  -o-transition: padding 0.2s ease;
-  transition: padding 0.2s ease !important;
+nav a {
+  text-transform: uppercase;
 }
+nav a:hover {
+  padding: 5px 10px;
+  font-size: 1.2em;
+  border-radius: 25px;
+  background: rgb(66, 153, 240);
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* .navbar {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+} */
 
 .smart-scroll {
   position: fixed;
@@ -79,17 +93,36 @@ body {
   z-index: 1030;
 }
 .scrolled-down {
+  -o-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
   transform: translateY(-100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .scrolled-up {
+  -o-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
   transform: translateY(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 /* NAV */
 
 /* HOME */
+.home {
+  margin-top: 0 !important;
+}
+
+.carousel-inner {
+  background-attachment: fixed !important;
+}
 .carousel-inner img {
   max-height: 660px;
 }
@@ -106,9 +139,8 @@ body {
   background: url("/images/my-images/main.jpg");
   background: url("https://sahilkaushalselfmade.github.io/Portfolio/images/my-images/main.jpg");
   width: auto;
-
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top right;
   height: auto;
 }
 
@@ -116,7 +148,18 @@ body {
   text-align: left;
 }
 .faprofileicons {
-  padding: 10px 30px;
+  background: rgb(66, 153, 240);
+  color: white;
+  border-radius: 100%;
+  padding: 12px;
+  margin: 5px;
+}
+.faprofileicons:hover {
+  padding: 20px;
+  -o-transition: ease-in-out 0.4s;
+  -moz-transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.4s;
+  margin: 5px;
 }
 
 /* SECTION PROFILE */
@@ -157,8 +200,13 @@ body {
 }
 #resumebutton:hover {
   padding: 15px 10px;
+  -o-transition: ease-in-out 0.4s;
+  -moz-transition: ease-in-out 0.4s;
   transition: ease-in-out 0.4s;
   background: rgb(66, 153, 240);
+}
+.resumedesc {
+  margin-bottom: 10px;
 }
 /* SECTION RESUME */
 
@@ -188,11 +236,52 @@ body {
 }
 /*POPOVER  */
 
+/* PORTFOLIO */
+.portfolio {
+  padding: 10px 0 !important;
+}
+
+.portfoliocard {
+  border: none;
+  border-radius: 25px !important;
+  margin: 0 10px;
+}
+.portfoliocard:hover {
+  background: lightblue;
+  padding: 5px;
+  -o-transition: ease-in-out 0.5s;
+  -moz-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+.portfoliocard img {
+  border-radius: 25px !important;
+  border: none;
+}
+.portfoliocard img:hover {
+  opacity: 0.7;
+}
+.card-body {
+  color: black;
+}
+.portfoliofaicon {
+  color: white;
+  background: rgb(66, 153, 240);
+  padding: 10px;
+  border-radius: 100%;
+}
+.portfoliofaicon:hover {
+  padding: 15px;
+  -o-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+/* PORTFOLIO */
+
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   .profileimg {
     background-position: top right !important;
-    height: 60vh !important;
+    height: 100vh !important;
   }
   .profiletext {
     text-align: center !important;
@@ -204,7 +293,7 @@ body {
 }
 @media (max-width: 998px) {
   .profileimg {
-    background-position: top center !important;
+    background-position: top right !important;
     height: 60vh !important;
   }
   .profiletext {
