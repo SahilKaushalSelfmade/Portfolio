@@ -277,6 +277,12 @@ nav a:hover {
 }
 /* PORTFOLIO */
 
+/* CONTACT */
+.contactusicon {
+  margin: 10px 0;
+}
+/* CONTACT */
+
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   .profileimg {
