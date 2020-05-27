@@ -36,6 +36,7 @@ $(function () {
 // MAIN POPOVER
 
 
+
 // DISMISS
 $('.resumebtndismiss').popover({
     trigger: 'hover'
@@ -50,7 +51,11 @@ $(function () {
         content: function () {
             return $("#popcard").html();
         },
-    });
+    }).click(function () {
+        setTimeout(function () {
+            $('[rel=popover]').popover('hide');
+        }, 5000);
+    });;
 });
 // CUSTOM POPOVER
 
