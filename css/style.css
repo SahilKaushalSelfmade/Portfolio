@@ -134,10 +134,11 @@ nav a:hover {
   /* text-align: center; */
   word-wrap: break-word;
   padding-bottom: 20px;
+  text-align: center;
+  text-align: center;
   border-bottom: 2px solid white;
 }
 .profileimg {
-  text-align: center;
   background: url("/images/my-images/main.jpg");
   background: url("https://sahilkaushalselfmade.github.io/Portfolio/images/my-images/main.jpg");
   width: auto;
