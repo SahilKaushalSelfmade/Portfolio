@@ -1,4 +1,19 @@
 // NAVBAR
+/////////////// fixed menu on scroll for desktop
+if ($(window).width() > 0) {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $('#mainNav').addClass("fixed-top");
+            // add padding top to show content behind navbar
+            $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+        } else {
+            $('#mainNav').removeClass("fixed-top");
+            // remove padding top from body
+            $('body').css('padding-top', '0');
+        }
+    });
+} // end if
+
 
 
 (function ($) {
@@ -7,6 +22,7 @@
     // Closes responsive menu when a scroll trigger link is clicked
     $('.js-scroll-trigger').click(function () {
         $('.navbar-collapse').collapse('hide');
+
     });
 
     // Activate scrollspy to add active class to navbar items on scroll
