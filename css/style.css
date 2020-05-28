@@ -154,7 +154,7 @@ nav ul li a:hover {
 .profileimg {
   background: url("/images/my-images/main.jpg");
   background: url("https://sahilkaushalselfmade.github.io/Portfolio/images/my-images/main.jpg");
-  width: 100vw;
+  width: 100vw !important;
   background-repeat: no-repeat;
   background-position: top right !important;
   height: 100vh !important;
