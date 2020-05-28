@@ -1,25 +1,21 @@
 // NAVBAR
-$('body').css('padding-top', $('.navbar').outerHeight() + 'px')
 
-// detect scroll top or down
-if ($('.smart-scroll').length > 0) { // check if element exists
-    var last_scroll_top = 0;
-    $(window).on('scroll', function () {
-        scroll_top = $(this).scrollTop();
-        if (scroll_top < last_scroll_top) {
-            $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
-        }
-        else {
-            $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
-        }
-        last_scroll_top = scroll_top;
+
+(function ($) {
+    "use strict"; // Start of use strict
+
+    // Closes responsive menu when a scroll trigger link is clicked
+    $('.js-scroll-trigger').click(function () {
+        $('.navbar-collapse').collapse('hide');
     });
-};
 
+    // Activate scrollspy to add active class to navbar items on scroll
+    $('body').scrollspy({
+        target: '#mainNav',
+        offset: 56
+    });
 
-$('.navbar-nav>li>a').on('click', function () {
-    $('.navbar-collapse').collapse('hide');
-});
+})(jQuery); // End of use strict
 
 
 

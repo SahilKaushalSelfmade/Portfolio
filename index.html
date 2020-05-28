@@ -102,62 +102,77 @@
     <!-- NAV BAR -->
     <header>
       <nav
-        class="nav navbar smart-scroll navbar-fixed-bottom navbar-expand-md navbar-dark bg-dark"
+        class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+        id="mainNav"
       >
-        <a id="navbarlogoimg "
-          ><img
-            src="images/my-images/20181007_133918.jpg"
-            class="navbar-brand"
-            rel="popover"
-            id="#navbarimagelogo"
-            style="
-              height: 35px;
-              width: 25px;
-              border-radius: 100%;
-              cursor: pointer;
-            "
-        /></a>
+        <div class="container-fluid">
+          <a class="navbar-brand js-scroll-trigger" id="navbarlogoimg "
+            ><img
+              src="images/my-images/main.jpg"
+              rel="popover"
+              id="#navbarimagelogo"
+              style="
+                height: 35px;
+                width: 30px;
+                border-radius: 100%;
+                cursor: pointer;
+              "
+          /></a>
 
-        <button
-          class="navbar-toggler d-lg-none"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center" id="collapsibleNavId">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#Home"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Profile">Profile</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Resume">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Skill">Skill</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.sahilkaushal.in">BLOG</a>
-            </li>
-          </ul>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-center"
+            id="collapsibleNavId"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#Profile"
+                  >Profile</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#Services"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#Resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#Skill">Skill</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#Portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#Contact"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link js-scroll-trigger"
+                  href="https://www.sahilkaushal.in"
+                  >BLOG</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -763,7 +778,7 @@
             class="card-link"
           >
             <i
-              class="fa fa-whatsapp faiconsglobal fapopovericon"
+              class="fa fa-whatsapp faiconsglobal faprofileicons"
               aria-hidden="true"
             ></i>
           </a>
