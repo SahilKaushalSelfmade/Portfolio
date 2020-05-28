@@ -259,7 +259,7 @@ nav ul li a:hover {
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   .carousel-inner img {
-    max-height: 50vh !important;
+    min-height: 50vh !important;
   }
   .profileimg {
     background-position: top right !important;
@@ -275,7 +275,7 @@ nav ul li a:hover {
 }
 @media (max-width: 998px) {
   .carousel-inner img {
-    max-height: 50vh !important;
+    min-height: 50vh !important;
   }
   .profileimg {
     background-position: top right !important;
