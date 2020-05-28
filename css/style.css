@@ -3,6 +3,9 @@
   --heading-font-family: "Bree Serif", serif;
   /* --heading-font-family: "Balsamiq Sans", cursive; */
 }
+html {
+  scroll-behavior: smooth;
+}
 *::-webkit-scrollbar {
   display: none;
 }
