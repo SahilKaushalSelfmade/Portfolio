@@ -107,10 +107,10 @@ nav ul li a:hover {
 .profileimg {
   background: url("/images/my-images/main.jpg");
   background: url("https://sahilkaushalselfmade.github.io/Portfolio/images/my-images/main.jpg");
-  width: 100vw !important;
+  width: 100vw;
   background-repeat: no-repeat;
   background-position: top right !important;
-  height: 100vh !important;
+  height: 600px;
 }
 
 .profiletext {
@@ -259,7 +259,7 @@ nav ul li a:hover {
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   .carousel-inner img {
-    min-height: 50vh !important;
+    height: 50vh !important;
   }
   .profileimg {
     background-position: top right !important;
@@ -275,7 +275,7 @@ nav ul li a:hover {
 }
 @media (max-width: 998px) {
   .carousel-inner img {
-    min-height: 50vh !important;
+    height: 50vh !important;
   }
   .profileimg {
     background-position: top right !important;
