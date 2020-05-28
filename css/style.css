@@ -258,9 +258,12 @@ nav ul li a:hover {
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
+  .carousel-inner img {
+    max-height: 50vh !important;
+  }
   .profileimg {
     background-position: top right !important;
-    height: 100vh !important;
+    height: 70vh !important;
   }
   .profiletext {
     text-align: center !important;
@@ -271,9 +274,12 @@ nav ul li a:hover {
   }
 }
 @media (max-width: 998px) {
+  .carousel-inner img {
+    max-height: 50vh !important;
+  }
   .profileimg {
     background-position: top right !important;
-    height: 100vh !important;
+    height: 70vh !important;
     background-size: cover;
   }
   .profiletext {
