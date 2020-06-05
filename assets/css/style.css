@@ -163,7 +163,7 @@ nav ul li a:hover {
   text-align: center;
 }
 .resumeimg {
-  background: url("/images/logo/resume.png");
+  background-image: url("/images/logo/resume.png");
   background: url("https://sahilkaushalselfmade.github.io/Portfolio/images/logo/resume.png");
   width: 100vw;
   background-repeat: no-repeat;
@@ -273,6 +273,7 @@ nav ul li a:hover {
     background-position: top right !important;
     height: 70vh !important;
   }
+
   .profiletext {
     text-align: center !important;
   }
@@ -290,6 +291,7 @@ nav ul li a:hover {
     height: 70vh !important;
     background-size: cover;
   }
+
   .profiletext {
     text-align: center !important;
   }
