@@ -69,9 +69,13 @@ body {
 /* GLOBAl */
 
 /* NAV */
+.navbar {
+  background: rgb(66, 153, 240) !important;
+}
 
 nav a {
   text-transform: uppercase;
+  /* color: white !important; */
 }
 
 nav ul li a:hover {
@@ -79,7 +83,7 @@ nav ul li a:hover {
   padding: 5px 10px;
   font-size: 1.2em;
   border-radius: 25px;
-  background: rgb(66, 153, 240);
+  background: rgb(66, 193, 240);
 
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -111,8 +115,8 @@ nav ul li a:hover {
   border-bottom: 2px solid white;
 }
 .profileimg {
-  background: url("/images/my-images/main.jpg");
-  background: url("https://sahilkaushalselfmade.github.io/Portfolio/images/my-images/main.jpg");
+  background-image: url("/images/my-images/main.jpg");
+  /* background: url("https://sahilkaushalselfmade.github.io/Portfolio/images/my-images/main.jpg"); */
   width: 100vw;
   background-repeat: no-repeat;
   background-position: top right !important;
@@ -170,7 +174,7 @@ nav ul li a:hover {
 }
 .resumeimg {
   background-image: url("/images/logo/resume.png");
-  background-image: url("https://sahilkaushalselfmade.github.io/Portfolio/images/logo/resume.png");
+  /* background-image: url("https://sahilkaushalselfmade.github.io/Portfolio/images/logo/resume.png"); */
   width: 100vw;
   background-repeat: no-repeat;
   background-position: top right !important;
