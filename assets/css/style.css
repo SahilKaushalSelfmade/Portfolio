@@ -162,6 +162,14 @@ nav ul li a:hover {
 .resume {
   text-align: center;
 }
+.resumeimg {
+  background: url("/images/logo/resume.png");
+  background: url("https://sahilkaushalselfmade.github.io/Portfolio/images/logo/resume.png");
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: top right !important;
+  height: 600px;
+}
 
 #resumebutton {
   margin-bottom: 5px;
