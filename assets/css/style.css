@@ -68,6 +68,16 @@ body {
 }
 /* GLOBAl */
 
+/* PRELOADER */
+#pre-loader {
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+  height: 100vh;
+  background: white url("/images/logo/preloader.gif") no-repeat center;
+}
+/* PRELOADER */
+
 /* NAV */
 .navbar {
   background: rgb(66, 153, 240) !important;

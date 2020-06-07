@@ -1,3 +1,11 @@
+// PRELOADER
+// var preloader = document.getElementById('pre-loader');
+// function preloader() {
+//     preloader.style.display = "none"; 
+// }
+
+
+
 // NAVBAR
 /////////////// fixed menu on scroll for desktop
 if ($(window).width() > 0) {
