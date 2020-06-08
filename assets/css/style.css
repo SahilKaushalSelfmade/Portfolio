@@ -29,36 +29,16 @@ a {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
+  font-weight: bolder;
   font-family: "Balsamiq Sans", cursive;
 }
 ul {
   list-style: none;
 }
-h1 {
-  font-weight: bolder;
-  font-size: 3rem;
-}
-h2 {
-  font-weight: bolder;
-  font-size: 2.6rem;
-}
-h3 {
-  font-weight: bolder;
-  font-size: 2.2rem;
-}
-h4 {
-  font-weight: bolder;
-  font-size: 1.8rem;
-}
-h5 {
-  font-weight: bolder;
-  font-size: 1.4rem;
-}
-h6 {
-  font-weight: bolder;
-  font-size: 1rem;
-}
+
 section {
   border-bottom: 2px solid white;
 }
@@ -68,16 +48,6 @@ body {
 }
 /* GLOBAl */
 
-/* PRELOADER */
-#pre-loader {
-  position: fixed;
-  width: 100%;
-  z-index: 999999;
-  height: 100vh;
-  background: white url("/images/logo/preloader.gif") no-repeat center;
-}
-/* PRELOADER */
-
 /* NAV */
 .navbar {
   background: rgb(66, 153, 240) !important;
@@ -85,7 +55,6 @@ body {
 
 nav a {
   text-transform: uppercase;
-  /* color: white !important; */
 }
 
 nav ul li a:hover {
@@ -94,7 +63,6 @@ nav ul li a:hover {
   font-size: 1.2em;
   border-radius: 25px;
   background: rgb(66, 193, 240);
-
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -103,55 +71,37 @@ nav ul li a:hover {
 
 /* NAV */
 
-/* HOME */
+/* SECTION HOME */
 .home {
-  margin-top: 0 !important;
-}
-
-.carousel-inner {
-  background-attachment: fixed !important;
-  opacity: 0.3;
-}
-.carousel-inner img {
-  max-height: 660px;
-}
-/* HOME */
-
-/* SECTION PROFILE */
-.profile {
-  /* text-align: center; */
   word-wrap: break-word;
   padding-bottom: 20px;
   border-bottom: 2px solid white;
 }
-.profileimg {
+.homeimg {
   background-image: url("/images/my-images/main.jpg");
-  /* background: url("https://sahilkaushalselfmade.github.io/Portfolio/images/my-images/main.jpg"); */
   width: 100vw;
   background-repeat: no-repeat;
   background-position: top right !important;
   height: 600px;
 }
-
-.profiletext {
+.hometext {
   text-align: left;
 }
-.faprofileicons {
+.fahomeicons {
   background: rgb(66, 153, 240);
   color: white;
   border-radius: 100%;
   padding: 12px;
   margin: 5px;
 }
-.faprofileicons:hover {
+.fahomeicons:hover {
   padding: 20px;
   -o-transition: ease-in-out 0.4s;
   -moz-transition: ease-in-out 0.4s;
   transition: ease-in-out 0.4s;
   margin: 5px;
 }
-
-/* SECTION PROFILE */
+/* SECTION HOME */
 
 /* SECTION SERVICES */
 .services {
@@ -184,26 +134,10 @@ nav ul li a:hover {
 }
 .resumeimg {
   background-image: url("/images/logo/resume.png");
-  /* background-image: url("https://sahilkaushalselfmade.github.io/Portfolio/images/logo/resume.png"); */
   width: 100vw;
   background-repeat: no-repeat;
   background-position: top right !important;
   height: 600px;
-}
-
-#resumebutton {
-  margin-bottom: 5px;
-  transition: 0.4s;
-}
-#resumebutton:hover {
-  padding: 15px 10px;
-  -o-transition: ease-in-out 0.4s;
-  -moz-transition: ease-in-out 0.4s;
-  transition: ease-in-out 0.4s;
-  background: rgb(66, 153, 240);
-}
-.resumedesc {
-  margin-bottom: 10px;
 }
 /* SECTION RESUME */
 
@@ -286,15 +220,12 @@ nav ul li a:hover {
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
-  .carousel-inner img {
-    height: 50vh !important;
-  }
-  .profileimg {
+  .homeimg {
     background-position: top right !important;
     height: 70vh !important;
   }
 
-  .profiletext {
+  .hometext {
     text-align: center !important;
   }
   h1,
@@ -303,16 +234,13 @@ nav ul li a:hover {
   }
 }
 @media (max-width: 998px) {
-  .carousel-inner img {
-    height: 50vh !important;
-  }
-  .profileimg {
+  .homeimg {
     background-position: top right !important;
     height: 70vh !important;
     background-size: cover;
   }
 
-  .profiletext {
+  .hometext {
     text-align: center !important;
   }
 }

@@ -1,11 +1,3 @@
-// PRELOADER
-// var preloader = document.getElementById('pre-loader');
-// function preloader() {
-//     preloader.style.display = "none"; 
-// }
-
-
-
 // NAVBAR
 /////////////// fixed menu on scroll for desktop
 if ($(window).width() > 0) {
@@ -55,15 +47,6 @@ $(function () {
 });
 // MAIN POPOVER
 
-
-
-
-// RESUME DISMISS
-$('.resumebtndismiss').popover({
-    trigger: 'hover'
-
-});
-// RESUME DISMISS
 
 
 // NAVBRAND PIC POPOVER
