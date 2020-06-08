@@ -194,7 +194,7 @@ nav ul li a:hover {
 .popover {
   background: transparent;
   border: none;
-  text-align: center;
+  text-align: center !important;
 }
 .popover-header {
   color: white;
@@ -205,14 +205,21 @@ nav ul li a:hover {
 }
 .popover-body {
   background: rgb(66, 153, 240);
-  color: white;
   border-radius: 25px;
+}
+.card-body {
+  color: white !important;
 }
 .popover-body img {
   border-radius: 25px;
 }
 .fapopovericon {
-  margin: 10px;
+  color: white !important;
+}
+.fapopovericon:hover {
+  padding: 10px;
+  background: lightseagreen;
+  border-radius: 100%;
   color: white !important;
 }
 /*POPOVER  */
