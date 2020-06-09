@@ -84,6 +84,9 @@ nav ul li a:hover {
   background-position: top right !important;
   height: 600px;
 }
+.homerow {
+  align-items: center !important;
+}
 .hometext {
   text-align: left;
 }
