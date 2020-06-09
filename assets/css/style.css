@@ -78,7 +78,7 @@ nav ul li a:hover {
   border-bottom: 2px solid white;
 }
 .homeimg {
-  background-image: url("/images/my-images/main.jpg");
+  background-image: url("/images/my-images/main.jpeg");
   width: 100vw;
   background-repeat: no-repeat;
   background-position: top right !important;
@@ -167,8 +167,8 @@ nav ul li a:hover {
   border: none;
 }
 
-.card-body {
-  color: black;
+.card-body > .card-title {
+  color: black !important;
 }
 .portfoliofaicon {
   color: white;
