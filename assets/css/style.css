@@ -132,6 +132,9 @@ nav ul li a:hover {
 .resume {
   text-align: center;
 }
+.resumetable {
+  align-items: center;
+}
 .resumeimg {
   background-image: url("/images/logo/resume.png");
   width: 100vw;
