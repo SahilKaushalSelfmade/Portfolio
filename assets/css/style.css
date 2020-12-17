@@ -41,6 +41,12 @@ ul {
 
 section {
   border-bottom: 2px solid white;
+  filter: grayscale(100%);
+  transition: all 0.7s;
+}
+section:hover {
+  transition: all 0.5s;
+  filter: none;
 }
 body {
   background: #0d0c0d;
